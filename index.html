@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neal Aringale - Coding Maestro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+            background-color: #1a1a1a;
+            color: #fff;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #3498db;
+            color: #fff;
+            opacity: 0;
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 1.2em;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        section {
+            padding: 40px;
+            margin-top: 40px;
+            background-color: #333;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s ease-in-out forwards;
+            transition: transform 0.5s, box-shadow 0.5s;
+        }
+
+        section:hover {
+            transform: translateY(0);
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h2 {
+            color: #3498db;
+        }
+
+        p {
+            font-size: 1.3em;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        a {
+            color: #3498db;
+            text-decoration: none;
+            position: relative;
+            transition: color 0.3s;
+        }
+
+        a::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: #3498db;
+            bottom: 0;
+            left: 0;
+            transform: scaleX(0);
+            transform-origin: bottom right;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        a:hover {
+            color: #fff;
+        }
+
+        a:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+
+        /* Icon Styles */
+        .fa {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Neal Aringale</h1>
+        <p>Coding Maestro & Python Enthusiast</p>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>About Me</h2>
+            <p>Hello, awesome coders and programming enthusiasts! Welcome to my coding realm. I'm Neal Aringale, a passionate Python developer currently on an exciting journey of self-learning and exploration in the world of web development. Join me as I share insights, projects, and coding adventures on this platform!</p>
+        </section>
+
+        <section>
+            <h2>Education and Self-Learning</h2>
+            <p>As a dedicated student, I've taken the plunge into self-learning Python and web development. This ongoing journey is a mix of discovery and growth, and I'm thrilled to bring you along on Instagram, where I document my coding experiences. Feel free to explore my coding projects, tips, and behind-the-scenes content.</p>
+        </section>
+
+        <section>
+            <h2>Connect with Me</h2>
+            <p>Explore more about my coding journey on social media:</p>
+            <a href="https://www.instagram.com/bytewizardry.neal/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="https://www.youtube.com/@ByteWizardry.NealAringale/featured" target="_blank"><i class="fab fa-youtube"></i> YouTube</a>
+            <a href="https://twitter.com/bytewizardry" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+        </section>
+
+        <section id="projects" style="background-image: url('background3.jpg');">
+            <h2>Featured Projects</h2>
+            <ul>
+                <li>Roborace - IIT Bombay</li>
+                <li>Cozmoclenz - IIT Bombay</li>
+                <li>Mechanzo League - IIT Bombay</li>
+                <li>Tech Expo - IIT Guwahati</li>
+                <li>HT Codethon</li>
+                <li>Smart India Hackthon</li>
+            </ul>
+            <p>These projects showcase my skills in Python and Arduino, earning recognition in prestigious competitions. Stay tuned for more detailed insights into these projects!</p>
+        </section>
+
+        <section id="instagram" style="background-image: url('background4.jpg');">
+            <h2>Instagram Highlights</h2>
+            <p>Expect content ranging from Python learning journeys and coding challenges to behind-the-scenes looks into my coding environment. Join me in the world of learning, coding, and creating!</p>
+        </section>
+
+        <section id="future" style="background-image: url('background5.jpg');">
+            <h2>Future Plans</h2>
+            <p>My future plans include mastering Java and conquering coding competitions at various IITs. I'm dedicated to building a vibrant community on Instagram and aspiring to achieve 100k followers by 2025. Join me on this exciting journey!</p>
+        </section>
+
+    </main>
+
+</body>
+</html>
